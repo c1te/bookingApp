@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.listSB {
+  height: 35rem;
+}
+
+.result {
+  height: 40rem;
+  overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar {
+  display: none;
+}
+
+.resultCard + .resultCard {
+  margin-top: 2rem;
+}
+
+.displayimg > img {
+  max-width: 100%;
+  width: 26rem;
+}
